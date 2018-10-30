@@ -59,6 +59,16 @@ console.log("Fourth button value is: " + fourthButton);
         //I have a value for the first button, now I should add it to the current value.
         currentValue = currentValue + firstButton;
         console.log(currentValue);
+        if (currentValue === goalNumber) {
+            alert("You win!!!");
+            console.log("win");
+        } 
+        
+        //function for if the person loses
+        else if (currentValue > goalNumber) {
+            alert("You lose!!!");
+            console.log("lose");
+        };
     });
     $(".btn-secondary").on("click", function() {
         console.log("Button 2 works");
@@ -66,18 +76,48 @@ console.log("Fourth button value is: " + fourthButton);
         //button 2 function
         currentValue = currentValue + secondButton;
         console.log(currentValue);
+        if (currentValue === goalNumber) {
+            alert("You win!!!");
+            console.log("win");
+        } 
+        
+        //function for if the person loses
+        else if (currentValue > goalNumber) {
+            alert("You lose!!!");
+            console.log("lose");
+        };
     });
     $(".btn-success").on("click", function() {
         console.log("Button 3 works");
         //button 3 function
         currentValue = currentValue + thirdButton;
         console.log(currentValue);
+        if (currentValue === goalNumber) {
+            alert("You win!!!");
+            console.log("win");
+        } 
+        
+        //function for if the person loses
+        else if (currentValue > goalNumber) {
+            alert("You lose!!!");
+            console.log("lose");
+        };
     });
     $(".btn-danger").on("click", function() {
         console.log("Button 4 works");
         //button 4 function
         currentValue = currentValue + fourthButton;
         console.log(currentValue);
+        if (currentValue === goalNumber) {
+            alert("You win!!!");
+            console.log("win");
+        } 
+        
+        //function for if the person loses
+        else if (currentValue > goalNumber) {
+            alert("You lose!!!");
+            console.log("lose");
+        };
     });
 
 
@@ -87,13 +127,13 @@ console.log("Fourth button value is: " + fourthButton);
     //I want the losing condition to be the current number being over the goal number
 
     //function for if the person wins
-    if (currentValue == goalNumber) {
-        alert("You win!!!");
-        console.log("win");
-    } 
+    // if (currentValue === goalNumber) {
+    //     alert("You win!!!");
+    //     console.log("win");
+    // } 
     
-    //function for if the person loses
-    else if (currentValue > goalNumber) {
-        alert("You lose!!!");
-        console.log("lose");
-    }
+    // //function for if the person loses
+    // else if (currentValue > goalNumber) {
+    //     alert("You lose!!!");
+    //     console.log("lose");
+    // };
