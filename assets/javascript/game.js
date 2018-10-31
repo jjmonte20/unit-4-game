@@ -66,6 +66,8 @@ console.log("Fourth button value is: " + fourthButton);
             //need to reset goal number to something new
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         } 
         
         //function for if the person loses
@@ -76,6 +78,8 @@ console.log("Fourth button value is: " + fourthButton);
             //need to reset goal number to something new
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         };
     });
     $(".btn-secondary").on("click", function() {
@@ -90,15 +94,19 @@ console.log("Fourth button value is: " + fourthButton);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         } 
         
         //function for if the person loses
         else if (currentValue > goalNumber) {
-            alert("You're Winner!!!");
+            alert("You Lose!!!");
             console.log("lose");
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         };
     });
     $(".btn-success").on("click", function() {
@@ -112,6 +120,8 @@ console.log("Fourth button value is: " + fourthButton);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         } 
         
         //function for if the person loses
@@ -121,6 +131,8 @@ console.log("Fourth button value is: " + fourthButton);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         };
     });
     $(".btn-danger").on("click", function() {
@@ -134,6 +146,8 @@ console.log("Fourth button value is: " + fourthButton);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         } 
         
         //function for if the person loses
@@ -143,6 +157,8 @@ console.log("Fourth button value is: " + fourthButton);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
+            currentValue = 0;
+            console.log(currentValue);
         };
     });
 
