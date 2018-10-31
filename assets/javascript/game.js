@@ -35,12 +35,11 @@ var currentValue = 0;
 var goalNumber = Math.floor((Math.random() * 120) + 19);
 console.log(goalNumber);
 
-$(".goalScore").html(goalScore);
+$(".goalScore").html(goalNumber);
 
 //now I need to give the buttons a value.  These are valued at a random number between 1 and 12
 var firstButton = Math.floor((Math.random() * 12) + 1);
 console.log("First button value is: " + firstButton);
-
 
 //button 2
 var secondButton = Math.floor((Math.random() * 12) + 1);
@@ -54,6 +53,8 @@ console.log("Third button value is: " + thirdButton);
 var fourthButton = Math.floor((Math.random() * 12) + 1);
 console.log("Fourth button value is: " + fourthButton);
 
+$(".currentScore").html(currentValue);
+
     //first task make buttons that work.  .on("click", function{}) should do the trick
     //buttons work and each have unique functions
     $(".btn-primary").on("click", function() {
@@ -64,7 +65,7 @@ console.log("Fourth button value is: " + fourthButton);
         console.log(currentValue);
 
         //need the current value to display on screen
-        $(".currentScore").html(currentValue);
+        
         
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
@@ -75,6 +76,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         } 
         
         //function for if the person loses
@@ -87,6 +90,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         };
     });
     $(".btn-secondary").on("click", function() {
@@ -106,6 +111,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         } 
         
         //function for if the person loses
@@ -117,6 +124,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         };
     });
     $(".btn-success").on("click", function() {
@@ -135,6 +144,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         } 
         
         //function for if the person loses
@@ -146,6 +157,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         };
     });
     $(".btn-danger").on("click", function() {
@@ -164,6 +177,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         } 
         
         //function for if the person loses
@@ -175,6 +190,8 @@ console.log("Fourth button value is: " + fourthButton);
             console.log(goalNumber);
             currentValue = 0;
             console.log(currentValue);
+            $(".currentScore").html(currentValue);
+            $(".goalScore").html(goalNumber);
         };
     });
 
@@ -185,14 +202,3 @@ console.log("Fourth button value is: " + fourthButton);
     //I have a goal value that picks a random number between 19 and 120
     //I want the win condition to be a matching number between the current value and the goal number
     //I want the losing condition to be the current number being over the goal number
-
-    // if (currentValue === goalNumber) {
-    //     alert("You're winner!!!");
-    //     console.log("win");
-    // } 
-    
-    // //function for if the person loses
-    // else if (currentValue > goalNumber) {
-    //     alert("You lose!!!");
-    //     console.log("lose");
-    // }
