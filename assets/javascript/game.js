@@ -35,9 +35,12 @@ var currentValue = 0;
 var goalNumber = Math.floor((Math.random() * 120) + 19);
 console.log(goalNumber);
 
+$(".goalScore").html(goalScore);
+
 //now I need to give the buttons a value.  These are valued at a random number between 1 and 12
 var firstButton = Math.floor((Math.random() * 12) + 1);
 console.log("First button value is: " + firstButton);
+
 
 //button 2
 var secondButton = Math.floor((Math.random() * 12) + 1);
@@ -59,6 +62,10 @@ console.log("Fourth button value is: " + fourthButton);
         //I have a value for the first button, now I should add it to the current value.
         currentValue = currentValue + firstButton;
         console.log(currentValue);
+
+        //need the current value to display on screen
+        $(".currentScore").html(currentValue);
+        
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
@@ -88,6 +95,9 @@ console.log("Fourth button value is: " + fourthButton);
         //button 2 function
         currentValue = currentValue + secondButton;
         console.log(currentValue);
+
+        $(".currentScore").html(currentValue);
+
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
@@ -114,6 +124,9 @@ console.log("Fourth button value is: " + fourthButton);
         //button 3 function
         currentValue = currentValue + thirdButton;
         console.log(currentValue);
+
+        $(".currentScore").html(currentValue);
+
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
@@ -140,6 +153,9 @@ console.log("Fourth button value is: " + fourthButton);
         //button 4 function
         currentValue = currentValue + fourthButton;
         console.log(currentValue);
+
+        $(".currentScore").html(currentValue);
+
         if (currentValue === goalNumber) {
             alert("You're winner!!!");
             console.log("win");
