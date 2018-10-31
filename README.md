@@ -2,7 +2,7 @@
 
 Welcome to my readme file for the gem game.
 
-Rules of the game, as written in the webpage.
+Here are the rules to the game as written on the webpage
 
 # Heigh Ho Rules
 
