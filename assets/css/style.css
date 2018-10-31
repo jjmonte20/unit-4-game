@@ -3,6 +3,10 @@ html, body {
     
 }
 
+body {
+    min-height: 100%;
+}
+
 .container {
     background-image: url(../images/mining.png);
     background-repeat: no-repeat;
@@ -19,6 +23,10 @@ header {
     margin: 1%;
     background-color: rgba(255, 255, 255, 0.7);
     
+}
+
+.myBoxHeading {
+    text-align: center;
 }
 
 .btn {
