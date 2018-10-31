@@ -53,6 +53,24 @@ console.log("Third button value is: " + thirdButton);
 var fourthButton = Math.floor((Math.random() * 12) + 1);
 console.log("Fourth button value is: " + fourthButton);
 
+// attempting a reset function for gems.  The function should be global, but the actions are not done until the game ends
+function gemReset() {
+    firstButton = Math.floor((Math.random() * 12) + 1);
+    console.log("First button value is: " + firstButton);
+
+    //button 2
+    secondButton = Math.floor((Math.random() * 12) + 1);
+    console.log("Second button value is: " + secondButton);
+
+    //button 3
+    thirdButton = Math.floor((Math.random() * 12) + 1);
+    console.log("Third button value is: " + thirdButton);
+
+    //button 4
+    fourthButton = Math.floor((Math.random() * 12) + 1);
+    console.log("Fourth button value is: " + fourthButton);
+}
+
 $(".currentScore").html(currentValue);
 
     //first task make buttons that work.  .on("click", function{}) should do the trick
@@ -63,7 +81,7 @@ $(".currentScore").html(currentValue);
         //I have a value for the first button, now I should add it to the current value.
         currentValue = currentValue + firstButton;
         console.log(currentValue);
-
+        $(".currentScore").html(currentValue);
         //need the current value to display on screen
         
         
@@ -78,6 +96,23 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
+            // firstButton = Math.floor((Math.random() * 12) + 1);
+            // console.log("First button value is: " + firstButton);
+
+            // //button 2
+            // secondButton = Math.floor((Math.random() * 12) + 1);
+            // console.log("Second button value is: " + secondButton);
+
+            // //button 3
+            // thirdButton = Math.floor((Math.random() * 12) + 1);
+            // console.log("Third button value is: " + thirdButton);
+
+            // //button 4
+            // fourthButton = Math.floor((Math.random() * 12) + 1);
+            // console.log("Fourth button value is: " + fourthButton);
+
+            // need a function that does this, but also allows a replay ^^
         } 
         
         //function for if the person loses
@@ -92,6 +127,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         };
     });
     $(".btn-secondary").on("click", function() {
@@ -100,7 +136,6 @@ $(".currentScore").html(currentValue);
         //button 2 function
         currentValue = currentValue + secondButton;
         console.log(currentValue);
-
         $(".currentScore").html(currentValue);
 
         if (currentValue === goalNumber) {
@@ -113,6 +148,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         } 
         
         //function for if the person loses
@@ -126,6 +162,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         };
     });
     $(".btn-success").on("click", function() {
@@ -133,7 +170,6 @@ $(".currentScore").html(currentValue);
         //button 3 function
         currentValue = currentValue + thirdButton;
         console.log(currentValue);
-
         $(".currentScore").html(currentValue);
 
         if (currentValue === goalNumber) {
@@ -146,6 +182,8 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
+            
         } 
         
         //function for if the person loses
@@ -159,6 +197,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         };
     });
     $(".btn-danger").on("click", function() {
@@ -166,7 +205,6 @@ $(".currentScore").html(currentValue);
         //button 4 function
         currentValue = currentValue + fourthButton;
         console.log(currentValue);
-
         $(".currentScore").html(currentValue);
 
         if (currentValue === goalNumber) {
@@ -179,6 +217,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         } 
         
         //function for if the person loses
@@ -192,6 +231,7 @@ $(".currentScore").html(currentValue);
             console.log(currentValue);
             $(".currentScore").html(currentValue);
             $(".goalScore").html(goalNumber);
+            gemReset();
         };
     });
 
