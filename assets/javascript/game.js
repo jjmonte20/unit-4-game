@@ -28,14 +28,18 @@
 
 
 
-// Define variables for the initial score
+// Define variables for the initial score, wins, and losses
 var currentValue = 0;
+var wins = 0;
+var losses = 0;
 
 // goal number variable needs to be a random number between 19 and 120
 var goalNumber = Math.floor((Math.random() * 120) + 19);
 console.log(goalNumber);
 
 $(".goalScore").html(goalNumber);
+$(".youWin").html(wins);
+$(".youLose").html(losses);
 
 //now I need to give the buttons a value.  These are valued at a random number between 1 and 12
 var firstButton = Math.floor((Math.random() * 12) + 1);
@@ -88,6 +92,8 @@ $(".currentScore").html(currentValue);
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
+            wins++;
+            $(".youWin").html(wins);
 
             //need to reset goal number to something new
             goalNumber = Math.floor((Math.random() * 120) + 19);
@@ -119,6 +125,8 @@ $(".currentScore").html(currentValue);
         else if (currentValue > goalNumber) {
             alert("You lose!!!");
             console.log("lose");
+            losses++;
+            $(".youLose").html(losses);
 
             //need to reset goal number to something new
             goalNumber = Math.floor((Math.random() * 120) + 19);
@@ -141,6 +149,8 @@ $(".currentScore").html(currentValue);
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
+            wins++;
+            $(".youWin").html(wins);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
@@ -155,6 +165,8 @@ $(".currentScore").html(currentValue);
         else if (currentValue > goalNumber) {
             alert("You Lose!!!");
             console.log("lose");
+            losses++;
+            $(".youLose").html(losses);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
@@ -175,6 +187,8 @@ $(".currentScore").html(currentValue);
         if (currentValue === goalNumber) {
             alert("You're Winner!!!");
             console.log("win");
+            wins++;
+            $(".youWin").html(wins);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
@@ -190,6 +204,8 @@ $(".currentScore").html(currentValue);
         else if (currentValue > goalNumber) {
             alert("You lose!!!");
             console.log("lose");
+            losses++;
+            $(".youLose").html(losses);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
@@ -210,6 +226,8 @@ $(".currentScore").html(currentValue);
         if (currentValue === goalNumber) {
             alert("You're winner!!!");
             console.log("win");
+            wins++;
+            $(".youWin").html(wins);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
@@ -224,6 +242,8 @@ $(".currentScore").html(currentValue);
         else if (currentValue > goalNumber) {
             alert("You lose!!!");
             console.log("lose");
+            losses++;
+            $(".youLose").html(losses);
 
             goalNumber = Math.floor((Math.random() * 120) + 19);
             console.log(goalNumber);
