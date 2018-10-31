@@ -16,10 +16,13 @@
         <div class="container">
 
             <!-- header location -->
-            <header class="myHeader">
-                <h1 class="myBoxHeading">Gem Game</h1>
-            </header>
-
+            <div class="row">
+                <div class="col-md-12">
+                    <header class="myHeader">
+                        <h1 class="myBoxHeading">Gem Game</h1>
+                    </header>
+                </div>
+            </div>
             <!-- row location -->
             <div class="row">
                 <div class="col-md-12">
@@ -32,13 +35,21 @@
             <div class="row">
 
                 <!-- column location -->
-                <div class="col-md-8">
+                <div class="col-md-3">
                     <button type="button" class="btn btn-primary"><img src="assets/images/diamond-sticker.png" style="width: 150px; height: 150px"></button>
+                </div>
+                <div class="col-md-3">
                     <button type="button" class="btn btn-secondary"><img src="assets/images/BlackGemStoneEmoji.jpg" style="width:150px; height: 150px"></button>
+                </div>
+                <div class="col-md-3">
                     <button type="button" class="btn btn-success"><img src="assets/images/amethyst-sticker.png" style="width: 150px; height: 150px"></button>
+                </div>
+                <div class="col-md-3">
                     <button type="button" class="btn btn-danger"><img src="assets/images/ruby-sticker.png" style="width: 150px; height: 150px"></button>
                 </div>
-                <div class="col-md-4">
+            </div>
+            <div class="row">
+                <div class="col-md-6">
                     <div class="myTallies">
                         <h3>Your Score</h3>
                         <p class="currentScore"></p>
@@ -47,6 +58,8 @@
                         <h3>Goal Score</h3>
                         <p class="goalScore"></p>
                     </div>
+                </div>    
+                <div class="col-md-6">
                     <div class="myTallies">
                         <h3>Wins</h3>
                         <p class="youWin"></p>
