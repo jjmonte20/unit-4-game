@@ -1,0 +1,17 @@
+html, body {
+    background-color: gold;
+    
+}
+
+.container {
+    background-image: url(../images/mining.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+}
+
+header {
+    background-color: aliceblue;
+    width: 100%;
+    opacity: .5;
+}
