@@ -1,5 +1,7 @@
 # unit-4-game
 
+https://jjmonte20.github.io/unit-4-game/
+
 Welcome to my readme file for the gem game.
 
 Here are the rules to the game as written on the webpage
